@@ -1,0 +1,18 @@
+https://www.quora.com/What-is-your-approach-to-testing-and-improving-QA
+
+- Improving QA
+
+Three pillars are there to help you build effective testing strategies: test plan, test strategy, and test cases. 
+
+A test plan is your mission statement: it outlines the scope of work, testing approaches, schedule, and your ultimate goals. It’s something that’s produced in the form of documentation at the preliminary stage of software testing. 
+
+A test strategy is your underlying set of principles that provide instructions and guidelines for how software testing must be performed. The test strategy is a referencing point for the QA engineers. Here are key differentiators to help you get your head around whether you need a test plan or test strategy. 
+
+A test case is a specific course of action that a QA engineer carries out to test a particular feature or functionality.
+First, you need to write a testing scenario that is a high-level definition of a certain testing task. It can be rather broad, so you need to break it down into specific test cases. Your test scenario can be something like “check the inquiry form on the landing page.” Now since there are many possible ways to do so, the following test cases can be specified:
+
+check the system’s response on entering empty input fields;
+check the system’s response on entering an invalid User Name;
+check the system’s response on entering an invalid User Email;
+Using a well-established test plan, test strategy, and test cases is paramount to ensure your project stays on schedule and budget. 
+

@@ -1,0 +1,252 @@
+
+Filipp Otto 2:51 AM
+Hi, there. Python | Django | Laravel | CI | ReactJS | NodeJS | VueJS | MERN Stack HERE
+
+
+
+I have 10+ years of experience in webdev, of which last five are in Full Stack development. Actually, I am language agnostic, which means that language by itself is not very significant for me -- they are all the same; but platform, paradigm and typical architecture of language specific solutions could make the difference.
+
+
+
+On the one hand, I am very interested in building application architectures, developing theme and solving the business tasks with use of technology rather than making the thing just for making them. On the other hand, I like to create some experimental applications for fun if I see a problem (business or real-life) to be solved, and usually these applications spill over into lot of coding with new technologies and techniques.
+
+
+
+• Framework: Django, Laravel, Codeigniter, YII etc
+• Language: Python, PHP
+• Scripting: JavaScript, AngularJS, NodeJS, ReactJS, VueJS, D3JS etc
+
+
+
+I do my job very attentively to details and client requirements.
+
+
+
+If there are some moments which will require to learn something unknown for me in this system I will do it without charging you.
+
+
+
+Filipp
+
+View details
+RB
+Ralph Brando 2:51 AM
+Hello Filipp, did you look at my specs for sprint 1?
+
+Filipp Otto 2:54 AM
+Yeah, I've already seen your pptx.
+
+your 65 issues are very piece of cake for me.
+
+RB
+Ralph Brando 2:56 AM
+It is extremely described, maybe a bit too muched 😉 Basically there will be a nova backend and the front is breeze generated auth default routes and we have html already done so mainly integration. More registration fields and condition than default scaffolding and a "question / answer" page. My budget is 500$ for this sprint. I guess it's a 1 or 2 day job for an expert (i'm a laravel dev myself). There is 6 more sprint for this project, between 2 and 4 weeks of work each. Are you interested?
+
+Filipp Otto 2:59 AM
+yeah. It's a deal.
+
+so your dead line is if I start this work immediately, tomorrow or the next day, right?
+
+I am also laravel expert. I will do my best to prove it.
+
+OK?
+
+look forward quick answer.
+
+RB
+Ralph Brando 3:05 AM
+Thank you seems a very good candidate
+
+one question
+
+I see on your profile you are really python oriented, Do made really a lot of project on laravel or it is a side tech for you?
+
+and did you worked with nova
+
+RB
+Ralph Brando 3:25 AM
+Are you there?
+
+Filipp Otto 3:40 AM
+oh, sorry. there was some urgent problem.
+
+now I am ok
+
+Yes, My core skill is python. But I am also great at Laravel.
+
+RB
+Ralph Brando Today 3:05 AM
+I see on your profile you are really python oriented, Do made really a lot of project on laravel or it is a side tech for you?
+
+To be honest, I am better in python than laravel.
+
+I's true, I don't want to lie.
+
+RB
+Ralph Brando 4:17 AM
+Are you ok with laravel nova ? When can you start ? This first sprint is considered a 2 /3 days max work. Is your code clean and commented?
+
+Filipp Otto 4:18 AM
+I am familiar with laravel nova. and I am sure my code is clean.
+
+RB
+Ralph Brando 4:20 AM
+You are my favorite candidate for now, can you start away and does the deadline worries u?
+
+Filipp Otto 4:22 AM
+To be honest, I worry about deadline a bit.
+
+I think all developer even expert must worry about deadline.
+
+It's something like responsiblity.
+
+aren't you?
+
+RB
+Ralph Brando 4:22 AM
+Yes thats why i ask 😉
+
+What i propose you is to start right away and professionnaly commit your work (push multiple times a day) so i can follow progress
+
+Filipp Otto 4:25 AM
+Ah, so you want to see the progress of project.
+
+right?
+
+RB
+Ralph Brando 4:25 AM
+Yes
+
+i mean i do code review of my subcontractors every day
+
+and i consider the usage of git mandatory and a commit made per issue not one per day 🙂
+
+don't u agree?
+
+Filipp Otto 4:27 AM
+yeah, It's a deal/
+
+RB
+Ralph Brando 4:28 AM
+and i can help on some technical questions. For example for the question builder the usage of laravel nova plugin "repeater" is the solution. I wrote it on the specs.
+Can you start right away and can you work on it a full shift per day to meet deadline.
+
+Filipp Otto 4:28 AM
+I also focu on git. so clients will show the my progress of their project.
+
+yeah, I will do my best.
+
+to finish your project until deadline.
+
+10 hours per day, are you satisfying?
+
+RB
+Ralph Brando 4:35 AM
+totally fine
+
+i just want to be sure its not part time
+
+can you start today?
+
+Filipp Otto 4:37 AM
+yes, I can start immediately.
+
+RB
+Ralph Brando 4:37 AM
+ok lets go
+
+Ralph Brando sent an offer
+
+ 4:39 AM
+20 hours of work
+Need expert laravel who produced commented code
+MUST KNOW Laravel Nova (its not optional)
+HTML/CSS already done and provided
+
+
+
+Specs already written and easy to follow and in copy of this ad
+
+Est. Budget: $500.00
+
+Milestone 1: 50 % deposit
+
+Amount in escrow: $250.00
+
+View details
+hyc_specs (1)
+.pptx
+3.18 MB
+I will need to invite you on jira and bitbucket
+
+Filipp Otto 4:40 AM
+okay
+
+thanks
+
+RB
+Ralph Brando 4:41 AM
+Your email please
+
+Filipp Otto 4:42 AM
+top.developer221@gmail.com
+
+RB
+Ralph Brando 4:42 AM
+or account name if you already have one
+
+All is sent
+
+you have jira with all issues (sometime completed by details)
+
+you should use that instead of the PPTX
+
+and pass to "review column" when done
+
+and you have bitbucket access
+
+with a blank laravel project (you can reset the repo if u want or make a branch "sprint 1" => should be better)
+
+Do you have any questions?
+
+nova
+.rar
+1.26 MB
+This is paid version of nova
+
+RB
+Ralph Brando 4:50 AM
+Read issue 37 first on jira its general rules
+
+all is ok Filipp?
+
+RB
+Ralph Brando 4:59 AM
+html
+.zip
+1.30 MB
+here is last html
+
+this is SASS, so need to be properly put in webpack
+
+are we all ok?
+
+Filipp Otto 5:00 AM
+All is ok.
+
+Ralph, but I have some problem.
+
+RB
+Ralph Brando 5:00 AM
+?
+
+Filipp Otto 5:00 AM
+I am not always available in Upwork.
+
+so could you tell me your telegram or skype address?
+
+RB
+Ralph Brando 5:01 AM
+my skype : ralphbrando
+
+telegram i even prefer : +33651981247

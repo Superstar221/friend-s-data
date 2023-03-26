@@ -1,0 +1,6 @@
+What language do you prefer to use with React: TypeScript or JavaScript and why?
+
+I prefer TypeScript than JavaScript.
+It's because :
+1.TypeScript code is more reliable and easier to refactor. This enables me to evade errors and do rewrites much easier.
+2.In large-scale systems, it is important to be able to abstract away the rest of the system while keeping the context in mind. Types enable us to do that.

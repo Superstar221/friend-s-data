@@ -1,0 +1,32 @@
+git config --global user.name = "lichen0310"
+git config --global user.email = "sandybeach0310@gmail.com"
+git remote remove origin
+
+git add .
+
+git commit -m main
+
+git remote add origin https://github.com/lichen0310/flask-blog
+
+git filter-branch --env-filter '
+NEW_NAME="lichen0310"
+NEW_EMAIL="sandybeach0310@gmail.com"
+if [ "$GIT_COMMITTER_EMAIL" != "$NEW_EMAIL" ]
+then
+export GIT_COMMITTER_NAME="$NEW_NAME"
+    export GIT_COMMITTER_EMAIL="$NEW_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" != "$NEW_EMAIL" ]
+then
+export GIT_AUTHOR_NAME="$NEW_NAME"
+    export GIT_AUTHOR_EMAIL="$NEW_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
+
+git push --all
+
+git branch -M main
+
+git remote set-url origin https://lichen0310@github.com/lichen0310/flask-blog.git
+
+git push --all

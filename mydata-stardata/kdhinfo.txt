@@ -1,0 +1,28 @@
+(ERC20 Token) https://coinmarketcap.com/currencies/dafi-protocol/
+(Token Information Site) https://www.dafiprotocol.io/
+(DeFi) https://simulate.dafiprotocol.io/
+
+Exchanges:
+https://gwallet.tech/
+https://play.google.com/store/apps/details?id=gwallet.tech
+https://apps.apple.com/be/app/gwallet-app/id1552665993
+
+https://www.thebullring.gg/
+https://crypto-news-exchange.herokuapp.com/
+https://coinveer.com/
+https://tea-swap.finance/
+https://skyswap.netlify.app/
+
+NFT:
+https://dunk.exchange/
+https://nft.hogiwallet.com/
+
+Wallets:
+https://play.google.com/store/apps/details?id=com.cryptokara
+https://demo.hogiwallet.com/
+
+
+==========================================================================================================================
+NFT staking refers to the locking up of NFTs on a platform or protocol to receive staking rewards and other privileges.
+
+==========================================================================================================================

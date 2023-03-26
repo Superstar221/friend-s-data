@@ -1,0 +1,5 @@
+Hi, there.
+Reading your job description it seems that you want to build analyzing website with wonderful design with.
+I have rich experience in building similar website - store date & time and data, display it graph with responsible design.
+In my experience it is useful to use GraphQL to draw graphs with complicate database like yours.
+I have rich experience in PHP and MERN/MEAN Stack and you can choose best stack for your project. But I want to let you know that you can make your website fast and great using MERN-Stack. Actually PHP has law speed and many companies try to convert their PHP or WordPress websites to MERN Stack. But I'm fine with whatever you choose. I will follow your decision and try to make perfect website with super speed and quality. My main priority is to maintain high quality of code from day one. I use the best tools, processes, design patterns, Clean Code and SOLID principles of software development to ensure the best results for my clients. Looking forward to hearing from you. Thanks.

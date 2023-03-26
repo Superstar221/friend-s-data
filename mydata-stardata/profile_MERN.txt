@@ -1,0 +1,39 @@
+MERN Dev 
+
+Hello!
+Before talking about qualifications and professional abilities, I would like to introduce myself. My name is Edward Hartman. Taking web development as a profession not only fulfills my pocket but also my heart because it has been my passion since my early teenage.
+
+I believe that people should do things in which they are good at or in which their heart lays. That’s why I chose freelance web development as my career because I believe I am good at this and I am always honest and I am never afraid of doing hard work.
+
+I have finished my graduation from Singapore University of Technology and Design (SUTD) on Information retrieval and I have taken many lessons on modern web developing from famous institutions. My education background allowed me to thrive in this career and my trainings on this have made me a master of this section.
+
+I am an outstanding expert in both frontend and backend developing. Especially ReactJS, NodeJS, MongoDB, Bootstrap/jQuery are my top skills. I have developed various websites to optimize their search engines and to create easier user interfaces.
+
+Recently, I have developed a website that helps small and medium sized businesses trade internationally with digital trade finance, and the website has become very popular among companies. The name of the website is https://www.modifi.com. The mobile app of the website was also created by me which has a high rating on google store.
+
+This is just one of my successful stories as a freelance web developer. I am sure that if you hire me, I will present you many successful projects with minimal efforts from your side. Also, I can give you money back guarantee and I can assure you won’t regret hiring me.
+Thank you.
+
+- Languages (HTML, Javascript, PHP)
+- Styling Markups (CSS, Bootstrap)
+- PHP Frameworks (Laravel, Codeigniter, CakePHP)
+- JS Frameworks (jQuery, Angular, Node, React, Vue)
+- Databases (MySQL, MongoDB)
+- CMS (WordPress, OpenCart, Prestashop)
+- Social Network API's (Facebook, Twitter, Instagram, Google, LinkedIn)
+- Payment Gateway (PayPal, Stripe, 2Checkout, Paystack, Razorpay, Authorized Dot Net)
+- Other API's (Google Maps, Web services, Restful API and Any Open Source API)
+
+***Blockchain***
+
+✅ Soalan & Cardano, Also Master of EVM
+✅ Custom Blockchain Development
+✅ NFT and IPFS Handling
+✅ Smart Contracts Development
+✅ dApps Development
+✅ Hyperledger & Multichain Development
+✅ Custom Cryptocurrency Development
+✅ Cryptocurrency Wallet and Exchange Applications
+✅ Private Blockchain Development
+✅ Blockchain Consulting
+✅ Ongoing Blockchain Development Support and Maintenance

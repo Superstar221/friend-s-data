@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        img {
+            object-fit: contain;
+        }
+        
+        @font-face {
+            font-family: Whitney;
+            src: url(https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/whitney-300.woff);
+            font-weight: 300;
+        }
+        
+        @font-face {
+            font-family: Whitney;
+            src: url(https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/whitney-400.woff);
+            font-weight: 400;
+        }
+        
+        @font-face {
+            font-family: Whitney;
+            src: url(https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/whitney-500.woff);
+            font-weight: 500;
+        }
+        
+        @font-face {
+            font-family: Whitney;
+            src: url(https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/whitney-600.woff);
+            font-weight: 600;
+        }
+        
+        @font-face {
+            font-family: Whitney;
+            src: url(https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/whitney-700.woff);
+            font-weight: 700;
+        }
+        
+        body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 17px;
+        }
+        
+        .top-bar {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        
+        .messages-list-container {
+            padding: 5px;
+        }
+        
+        .message-avatar {
+            margin-right: 20px;
+        }
+        
+        .message-box {
+            border-top: 1px solid #bdbdbd;
+            padding: 5px;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+        }
+        
+        .message-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+        
+        .message-date {
+            color: #616161;
+            font-size: 12px;
+            font-weight: 300;
+        }
+        
+        .message-author {
+            color: #212121;
+            font-size: 15px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        
+        .message-content {
+            color: #212121;
+            font-size: 16px;
+            margin-top: 10px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            white-space: pre-wrap;
+        }
+        
+        .message-embeded {
+            display: flex;
+            justify-content: start;
+            /* align-items: stretch; */
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        
+        .embed-text {
+            font-size: 15px;
+            color: #212121;
+        }
+        
+        .embed-description {
+            font-size: 13px;
+            color: #424242;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- top bar -->
+    <div>
+        <h1 id="chatlogs-title" class="top-bar">
+            <img id="server-icon" src="" />
+        </h1>
+    </div>
+
+    <!-- messages list -->
+    <div class="messages-list-container" id="chatlogs-message-list-container"></div>
+</body>
+
+<script>
+    function get_avatar_url(author_id, avatar) {
+        if (!avatar) {
+            return 'https://discord.com/assets/6debd47ed13483642cf09e832ed0bc1b.png';
+        }
+
+        if (avatar.indexOf('a_') == 0) {
+            //gif
+            return `https://cdn.discordapp.com/avatars/${author_id}/${avatar}.gif`;
+        }
+        return `https://cdn.discordapp.com/avatars/${author_id}/${avatar}.png`;
+    }
+
+    let title = 'CHAT_EXPORT_TITLE';
+    let messages = [{"id":"1021769748230438923","type":0,"content":"","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:08:11.542000+00:00","edited_timestamp":null,"flags":0,"components":[],"sticker_items":[{"id":"749054660769218631","format_type":3,"name":"Wave"}]},{"id":"1021769759873835069","type":0,"content":"Hi","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:08:14.318000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021769768551850014","type":0,"content":"Nice to meet you","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:08:16.387000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021769801011564544","type":0,"content":"Hello","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:08:24.126000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021769814169104496","type":0,"content":"This is David Lee","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:08:27.263000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021769824633897021","type":0,"content":"nice meeting you too","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:08:29.758000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021769873371701339","type":0,"content":"Do you go by David or Lee?","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:08:41.378000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021769911640535131","type":0,"content":"David","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:08:50.502000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021770258773717043","type":0,"content":"I go by Shak","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:10:13.265000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021770332853502036","type":0,"content":"I heard you are an excellent dev","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:10:30.927000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021770373282402305","type":0,"content":"Thanks","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:10:40.566000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021770414474657805","type":0,"content":"I heard you have a task","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:10:50.387000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021770453863387238","type":0,"content":"could you tell me about your project?","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:10:59.778000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021770633727721564","type":0,"content":"So I am working on a native app automation project using wdio/appium","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:11:42.661000+00:00","edited_timestamp":"2022-09-20T13:11:45.828000+00:00","flags":0,"components":[]},{"id":"1021770746604822629","type":0,"content":"are you familiar with appium/wdio?","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:12:09.573000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021770774186573916","type":0,"content":"yup","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:12:16.149000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021770918734856212","type":0,"content":"cool","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:12:50.612000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021771138231185418","type":0,"content":"I have done web automation wdio","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:13:42.944000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021771193092681750","type":0,"content":"but new to native app","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:13:56.024000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021772154712363089","type":0,"content":"So I am planning to go with \n1. JS\n2. Cucumber \n3. Wdio\n4. Appium \nI would need help setting up the framework for both android and iOS","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:17:45.292000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021772271922200657","type":0,"content":"I can help you with creating config files","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:18:13.237000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021772611358830634","type":0,"content":"got it","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:19:34.165000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021772760827056230","type":0,"content":"Mostly I'd need help with integrating cloud services such as \n1. Browserstack or saucelab \n2. Firebase where we keep our SDKs","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:20:09.801000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021772888182886400","type":0,"content":"Ok","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:20:40.165000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021772923654127689","type":0,"content":"but before the start, please clarify the payment","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:20:48.622000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021773031091228752","type":0,"content":"I would like to hear from you","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:21:14.237000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021773085621375059","type":0,"content":"what are you expecting?","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:21:27.238000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021773271072522271","type":0,"content":"hourly-based payment","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:22:11.453000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021773421455089685","type":0,"content":"please tell me your expectation","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:22:47.307000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021773452794925196","type":0,"content":"I will follow you because you are momin's friend","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:22:54.779000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021773478417936384","type":0,"content":"and I am also momin's friend","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:23:00.888000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021773492796002305","type":0,"content":"so we are friends","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:23:04.316000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021773567676915872","type":0,"content":"but at least I want weekly payment","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:23:22.169000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021773702284718191","type":0,"content":"I was expecting to go by project","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:23:54.262000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021773845985759242","type":0,"content":"like $200 for design and developing the framework","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:24:28.523000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021774063917604904","type":0,"content":"hourly pay is not possible?","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:25:20.482000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021774431925850152","type":0,"content":"I prefer project based","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:26:48.222000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021774553644535838","type":0,"content":"I can provide you all the resources","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:27:17.242000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021774626709315606","type":0,"content":"also I am well versed in web automation","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:27:34.662000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021774715532087378","type":0,"content":"ok","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:27:55.839000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021774743411634208","type":0,"content":"then at first, go by project based","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:28:02.486000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021774933988229120","type":0,"content":"and if we like each others work and commitment we can partner up in future projects","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:28:47.923000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021774984487632956","type":0,"content":"ok","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:28:59.963000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021774988665176114","type":0,"content":"ok","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:29:00.959000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021775048589180998","type":0,"content":"then what is the first milestone","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:29:15.246000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021775594859536504","type":0,"content":"Design and develop the framework \ne.g \ncreating base config file, ios and android config files","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:31:25.487000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021775650140455022","type":0,"content":"setting up the utils","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:31:38.667000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021775706511917137","type":0,"content":"testdata reader","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:31:52.107000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021775860736475237","type":0,"content":"integration of firebase so we can download app directly from firebase","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:32:28.877000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021776042505023530","type":0,"content":"deadline and budget","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:33:12.214000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021776156283908137","type":0,"content":"and give me such a source code","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:33:39.341000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021776407984095292","type":0,"content":"https://webdriver.io/docs/boilerplates","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[{"type":"link","url":"https://webdriver.io/docs/boilerplates","title":"Boilerplate Projects | WebdriverIO","description":"Over time, our community has developed several projects that you can use as inspiration to set up your own test suite.","thumbnail":{"url":"https://webdriver.io/img/logo-webdriver-io.png","proxy_url":"https://images-ext-2.discordapp.net/external/8ywO6GEB7MgL56CrgCd-gfa6uE7SRuCbjfC3JlYppy4/https/webdriver.io/img/logo-webdriver-io.png","width":267,"height":267}}],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:34:39.351000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021776465550917743","type":0,"content":"they've some boiler plate projects here","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:34:53.076000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021776608119496794","type":0,"content":"you can download stadiumgoods app from app store","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:35:27.067000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021776694195015782","type":0,"content":"we are going to automate UI testing for stadiumgoods app","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:35:47.589000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021776920704196689","type":0,"content":"all the boilerplate projects are pretty basic but we would need to develop an advanced framework","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:36:41.593000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021777072995172363","type":0,"content":"Let's start with $200 I will write down the requirements in a word doc and share with you","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:37:17.902000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021777102028157080","type":0,"content":"what's your gmail?","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:37:24.824000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021777131606376529","type":0,"content":"davidlee888555@gmail.com","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:37:31.876000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021780506016235620","type":0,"content":"where are you located?","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:50:56.398000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021780543106449418","type":0,"content":"hong kong","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:51:05.241000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021780583363391580","type":0,"content":"I am busy with work now","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:51:14.839000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021780591819100251","type":0,"content":"wbu?","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:51:16.855000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021780673683525642","type":0,"content":"will put together a document later today and share with you","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:51:36.373000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021780862989254736","type":19,"content":"NY","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0}],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:52:21.507000+00:00","edited_timestamp":null,"flags":0,"components":[],"message_reference":{"channel_id":"1021769541325443113","message_id":"1021780591819100251"},"referenced_message":{"id":"1021780591819100251","type":0,"content":"wbu?","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:51:16.855000+00:00","edited_timestamp":null,"flags":0,"components":[]}},{"id":"1021780968132063302","type":0,"content":"ok","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:52:46.575000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021780992345772105","type":0,"content":"I can work in your time zone","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:52:52.348000+00:00","edited_timestamp":"2022-09-20T13:53:01.869000+00:00","flags":0,"components":[]},{"id":"1021781113703760013","type":0,"content":"that'd be awesome so we can do pair programing","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:53:21.282000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021781189582917722","type":0,"content":"right","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:53:39.373000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021781241462272000","type":0,"content":"anyway, after done with document, please let me know","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:53:51.742000+00:00","edited_timestamp":"2022-09-20T13:53:54.030000+00:00","flags":0,"components":[]},{"id":"1021781257958477885","type":0,"content":"looking forward to that","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:53:55.675000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021781342612111430","type":0,"content":"I will share with you by tonight","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:54:15.858000+00:00","edited_timestamp":null,"flags":0,"components":[],"reactions":[{"emoji":{"id":null,"name":"✅"},"count":1,"me":true}]},{"id":"1021781409393807412","type":0,"content":"Ok","channel_id":"1021769541325443113","author":{"id":"994439681070608505","username":"David Lee","avatar":"46b5e3588352366cce6f237e561e87e7","avatar_decoration":null,"discriminator":"0494","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T13:54:31.780000+00:00","edited_timestamp":"2022-09-20T13:54:34.136000+00:00","flags":0,"components":[]},{"id":"1021782979611218020","type":0,"content":"in the meantime you can set up a github repo","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T14:00:46.149000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021826945329135696","type":0,"content":"shared the requirement with you","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T16:55:28.393000+00:00","edited_timestamp":null,"flags":0,"components":[]},{"id":"1021826985049194516","type":0,"content":"let me know if you have any questions","channel_id":"1021769541325443113","author":{"id":"1001621109592047648","username":"money2green","avatar":null,"avatar_decoration":null,"discriminator":"2335","public_flags":0},"attachments":[],"embeds":[],"mentions":[],"mention_roles":[],"pinned":false,"mention_everyone":false,"tts":false,"timestamp":"2022-09-20T16:55:37.863000+00:00","edited_timestamp":null,"flags":0,"components":[]}];
+
+    document.querySelector('#server-icon').src = '';
+
+    let msg_list_container = document.querySelector('#chatlogs-message-list-container');
+    messages.forEach(elmt => {
+        let message_box = document.createElement('div');
+        message_box.classList.add('message-box');
+
+        let img_avatar = document.createElement('img');
+        img_avatar.classList.add('message-avatar');
+        img_avatar.width = '64';
+        img_avatar.height = '64';
+        img_avatar.src = get_avatar_url(elmt.author.id, elmt.author.avatar);
+        message_box.appendChild(img_avatar);
+
+        //message-body
+        let message_body = document.createElement('div');
+        message_body.classList.add('message-body');
+        //message-meta
+        let message_meta = document.createElement('div');
+        message_meta.classList.add('message-meta');
+        let message_author = document.createElement('span');
+        message_author.classList.add('message-author');
+        message_author.innerText = elmt.author.username + '#' + elmt.author.discriminator;
+        let message_date = document.createElement('span');
+        message_date.classList.add('message-date');
+        let day = new Date(elmt.timestamp);
+        message_date.innerText = `${day.toLocaleDateString()} ${day.toLocaleTimeString()}`;
+        message_meta.appendChild(message_author);
+        message_meta.appendChild(message_date);
+        message_body.appendChild(message_meta);
+        message_box.appendChild(message_body);
+
+        //message-content
+        let message_content = document.createElement('div');
+        message_content.classList.add('message-content');
+        let span_content = document.createElement('span');
+        span_content.innerText = elmt.content;
+        message_content.appendChild(span_content);
+        message_body.appendChild(message_content);
+
+        //message-embeded
+        let message_embed = document.createElement('div');
+        message_embed.classList.add('message-embeded');
+        elmt.embeds.forEach(embed_elmt => {
+            let embed_container = document.createElement('div');
+            embed_container.classList.add('embed-container');
+            message_embed.appendChild(embed_container);
+
+            if (embed_elmt.title) {
+                let embed_text = document.createElement('div');
+                embed_text.classList.add('embed-text');
+                embed_text.innerText = embed_elmt.title;
+                embed_container.appendChild(embed_text);
+            }
+
+            if (embed_elmt.description) {
+                let embed_desc = document.createElement('div');
+                embed_desc.classList.add('embed-description');
+                embed_desc.innerText = embed_elmt.description;
+                embed_container.appendChild(embed_desc);
+            }
+
+            let embed_thumbnail = document.createElement('div');
+            embed_thumbnail.classList.add('embed-thumbnail');
+            let link = document.createElement('a');
+            link.target = '_blank';
+            if (embed_elmt.video) {
+                link.href = embed_elmt.video.url;
+            } else if (embed_elmt.image) {
+                link.href = embed_elmt.image.url;
+            }
+
+            if (embed_elmt.thumbnail && embed_elmt.thumbnail.url) {
+                let img_link = document.createElement('img');
+                img_link.src = embed_elmt.thumbnail.url;
+                link.appendChild(img_link);
+                embed_thumbnail.appendChild(link);
+                embed_container.appendChild(embed_thumbnail);
+            }
+
+            message_body.appendChild(message_embed);
+        });
+
+        //attachments
+        let message_attach = document.createElement('div');
+        elmt.attachments.forEach(attach_elmt => {
+            let attach_container = document.createElement('div');
+            attach_container.classList.add('attach-container');
+            message_attach.appendChild(attach_container);
+
+            let link = document.createElement('a');
+            link.target = '_blank';
+            if (['image/png', 'image/jpg', 'image/jpeg', 'image/gif'].includes(attach_elmt.content_type)) {
+                let img_link = document.createElement('img');
+                img_link.src = attach_elmt.url;
+
+                link.appendChild(img_link);
+                attach_container.appendChild(link);
+            }
+
+            message_body.appendChild(message_attach);
+        });
+
+
+        msg_list_container.appendChild(message_box);
+    });
+</script>
+
+</html>

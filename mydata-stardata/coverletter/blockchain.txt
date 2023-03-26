@@ -1,0 +1,21 @@
+Hi, Hope you are doing well!
+
+Your job post stood out to me because it's extremely similar to the work I’ve provided to many clients before.
+My extensive experience in MERN stack + web3.js matches well with your requirements.
+In addition, I worked for several clients such as Compound, 0x, Pylon, so I'm happy to work for such a good client with a long-term relationship.
+
+Here are some previous projects built using React and web3.js.
+ - https://pylon.finance
+ - https://pylon.finance/oldfarms
+ - https://dondi.io
+My role in these projects was as a frontend developer,
+I developed the frontend webpage using React and web3.js
+The most challenging part was an overflow issue from multiple operations of uint256*uint256 variables and I couldn't get any good ideas from Stackoverflow.com. Finally, I solved the problem by making a module of string multiplication large numbers. Also, I advised my client to build this amazing product in the frontend and smart contract parts.
+
+### About Me
+https://github.com/Twenty-August
+These are my technical stacks
+- Programming knowledge: MERN, MEVN, MEA, python/Django, web3.js, web3.py, 
+- Cloud providers: AWS, Azure, Heroku, Google Cloud, DigitalOcean
+- Web server: IIS, Nginx, Apache
+- CI/CD: Travis CI, CircleCI, Azure, Jenkins, GitHub actions

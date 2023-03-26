@@ -1,0 +1,14 @@
+{
+  "name": "Emoji Filtering",
+  "description": "Filter with Emoji",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+      "default_title": "Filter with Emoji.",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}

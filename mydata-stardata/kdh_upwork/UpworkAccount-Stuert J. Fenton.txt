@@ -1,0 +1,84 @@
+First Name	:	Stuert J.
+Last Name	:	Fenton
+Password	:	superstar221@@!
+Location	:	New York/US
+============================================================================================================
+Title		:	Blockchain Developer-Blockchain | Web - Solana | Cosmos | Rust
+============================================================================================================
+OverView	:	
+I can create smart contracts to an entire blockchain tailored to your application - the exact solution will depend on your project. I mostly work in the solana and cosmos ecosystems but due to my strong blockchain fundamentals I can create applications on any chain, even the most obscure ones. If your blockchain project is complex and is not just minting NFT's, then I will be a good fit.
+No matter what software I make for you I will make sure its of the best quality. I pride myself on my ability to write elegant code. I will exploit all the features of whatever programming language I use to come up with the most performant and easy to maintain code. I am well versed with design patterns and will use the most fitting design pattern based on the situation.
+
+You can find some of my previous work
+https://bitcards.com/ 
+https://www.bitcoiva.com/ 
+
+================================================================================================================
+Work History	:	
+/////////////////////////////////////////////////////
+Consultation for token/blockchain
+Rating is 5 out of 5.
+ May 4, 2022 - May 9, 2022
+"Did a good job explaining things that will be helpful for further development. Would be happy to work with them again"
+Private earnings
+/////////////////////////////////////////////////////
+Add updates to Solana CLI minting bot in RUST
+Rating is 5 out of 5.
+ Apr 1, 2022 - Apr 24, 2022
+"Stuart did good work developing my requirement using RUST. Definitely going to hire him again and I already planned the next project for him to work on."
+
+Private earnings
+/////////////////////////////////////////////////////
+Golang POC project
+Rating is 5 out of 5.
+ Jan 30, 2022 - Feb 6, 2022
+"On time delivery, also i wanted to understand code so he explain me code. Good work."
+
+Private earnings
+/////////////////////////////////////////////////////
+==================================================================================================================
+Skills:
+Golang
+Blockchain Development
+WebAssembly
+Rust
+Blockchain
+Solana
+Smart Contract
+Layer 2 Blockchain
+Blockchain, NFT & Cryptocurrency
+Blockchain Development Framework
+Business Logic Layer
+Functional Prototype
+Web Development
+API Development
+API Documentation
+==================================================================================================================
+particular skills: Blockchain&NFT development
+Expertise level: Expert
+==================================================================================================================
+Education:
+Bachelor Computer Science
+University of Toronto
+2014 - 2017 
+==================================================================================================================
+Hourly Rate:
+$60/hr
+==================================================================================================================
+Title:
+Blockchain Developer-Blockchain | Web - Solana | Cosmos | Rust
+Professional Overview:
+I have very experienced in Smart Contracts, dApps and NFT projects for + 5years.
+==================================================================================================================
+Country: United States
+Street: Prospect Park West
+City: New York
+State/Province: New York
+ZIP/Postal code: 11215
+==================================================================================================================
+Phone number:
++1-617-555-0191
+==================================================================================================================
+
+
+

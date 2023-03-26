@@ -1,0 +1,34 @@
+I am a seasoned programmer with 8 years of industry experience and 2 years of experience in academia.
+My main priority is to maintain high quality of code from day one. I use the best tools, processes, design patterns, Clean Code and SOLID principles of software development to ensure the best results for my clients.
+
+Reason why I applied role at Spraye?
+
+First : I have good skills with given programming language experience.
+
+Have rich experience in 
+PHP (CodeIgniter & Laravel framework) : 6 years of experience.
+SaaS : 3 years of experience.
+MySQL database management : 8 years of experience.
+CSS, HTML & Bootstrap: : 10 years of experience.
+Other skills in React.js, Vue.js, Angular.js, Node.js, Next.js, Express.js, MongoDB, Typescript.
+
+Second : I always like to build Clean Code and take care of things for "Testing and Improving QA"
+
+I am always follow three pillars are there to help you build effective testing strategies: test plan, test strategy, and test cases. 
+
+A test plan is your mission statement: it outlines the scope of work, testing approaches, schedule, and your ultimate goals. 
+A test strategy is your underlying set of principles that provide instructions and guidelines for how software testing must be performed. 
+A test case is a specific course of action that a QA engineer carries out to test a particular feature or functionality.
+
+I also care things like : 
+
+check the system’s response on entering empty input fields;
+check the system’s response on entering an invalid User Name;
+check the system’s response on entering an invalid User Email;
+Using a well-established test plan, test strategy, and test cases is paramount to ensure your project stays on schedule and budget.
+
+Third : I previously served as CTO for a company.
+
+I have experience in Project Coordination and Project Management for over 4years.
+
+Firth :  I will be available for you for any kind of future edits and customizations. Sometimes my five years back clients search for me till now only because of my service. I am mostly in love of communication. I like to be in touch with my clients 24/7 so that they can catch me any time when they need me. I am easy to use any kind of mobile or pc applications to be connected with you. I am looking for the clear requirements docs of your site so that I can start working immediately. If you need to discuss with me for any kind of suggestions or information, please knock me anytime. I am looking forward to hearing from you very soon. 

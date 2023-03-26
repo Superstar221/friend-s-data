@@ -1,0 +1,51 @@
+Blockchain Developer-Blockchain & NFT Development
+FirstName: Iwan
+LastName: Philps
+
+Blockchain Developer
+$55.00/hr
+I'm a Blockchain Developer. I've more than 3 years experience of writing NFT smart contracts and building decentralized applications. 
+
+I work in the latest technologies "Blockchain"
+
+1. ERC20 and ERC223 standard token creation using latest secure version of solidity code.
+
+2. Crowdsale token contract having the facility to trasfer ether automatically to owner wallet, once received on the contract along with immediate token transfer to the buyer.
+
+eg: Cibus Token, Investa Coin, Thanecoin and 50+ other ICO tokens
+
+
+3. Multicrypto currency wallet to provide smooth user experience during the ICO and lifetime.
+
+Eg: etherup.net
+
+4. Blockchain/ICO project consultation
+
+Blockchain framework:
+
+Ethereum
+1. Solidity
+2. Truffle & Hardhat
+3. Metamask
+4. Infura
+
+I'm looking forward to working with you!
+
+Thank You.
+
+Education
+University of Amsterdam
+Bachelor of Computer Science, Software Engineering
+2017-2021
+
+President Initiative Artificial Intelligence and Cloud Computing
+Blockchain
+2019-2021
+
+Employment history
+Blockchain Developer | Filverr
+July 2021-Present
+
+Other Experiences
+Music support agent
+Worked as a music support agent.

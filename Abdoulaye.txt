@@ -1,0 +1,191 @@
+Skip to content
+function () { [native code] }
+Find Work
+My Jobs
+Reports
+Messages
+Search
+
+Search category:
+Jobs
+
+
+Account Settings
+Search
+Abdoulaye BA
+Blockchain, smart contract and python developer
+8:51 AM
+Abdoulaye: Thanks Levi
+Abdoulaye BA
+6:06 PM GMT+2
+Blockchain, smart contract and python developer
+
+ 
+View Proposal
+ 
+Schedule a meeting
+ 
+Record with Loom
+Tue, Aug 09
+Levi Driessen 6:48 AM
+Hi, Abdoulaye. ✔✔✔ I've read your job description carefully and realized that I am perfect fit with this job.✔✔✔
+I'm perfect backend developer with 5 years experience. I've developed smart contracts for 3 years and worked as python backend developer in DanglasIT company for 5 years.
+Especially, my core skill is smart contract.
+If you hire me, then I will deliver you satisfying results in 15 days with my expertise and experience.
+
+View details
+Abdoulaye BA 6:48 AM
+Hi Levi,
+
+
+
+Thank you for the proposal.
+The project is about a real estate platform using crypto currencies payment.
+It will include dynamique conversion from currencies to cryptos, metamask auth and also smart contract for the property selling transaction.
+All the front end is already done, we just need to complete the backend as described in the job desc.
+I'm looking for someone with enough skills to complete the job with quality and at time.
+Are you available now ? I have a 350$ budget for this job.
+If all good for you, I will send you the git details and hire you now.
+
+
+
+Thanks and regards
+AB
+
+Levi Driessen 6:56 AM
+Thank you for your response. Abdoulaye
+
+You are my first client on Upwork, so I will do you want.
+
+Please send me an offer, then I will do my best to help you perfectly.
+
+OK?
+
+Abdoulaye BA 7:28 AM
+thats perfect
+Here is the summary from the previous developer, please check and confirm if all good
+
+Here is the remaining things to complete the project:
+1) The source code of the Smart Contract is in CC in the afrik-invest-contract.zip project, the implementation is a V1 which does not take everything into account. Contracts should be improved over time.
+
+
+
+2) Create an API key on Coingecko ( https://www.coingecko.com/fr/api/documentation)
+- (backend) Use the endpoints /coins/list to get the ID of the coins accepted in Afrikinvest, then call /simple/price with the ID to get the current price
+- (frontend) https://github.com/raydium-io/raydium-frontend/blob/11b13afcc1531f76b96e06eaff98f613665a9ee7/src/pages/swap.tsx#L968 : in frontend, Integrate the mini graph, possibility to take inspiration from Raydium's implementation with the KLineChart() component
+( https://github.com/raydium-io/raydium-frontend/blob/11b13afcc1531f76b96e06eaff98f613665a9ee7/src/pages/swap.tsx#L968)
+
+
+
+3) (backend) Setup of the Mongo database with the backup of the csv files :
+Example of Mongo commands to make the import : mongoimport -d database_name -c collection_name --type csv --file locations.csv --headerline
+- (backend) Once this step done, you need to add a Repository class to retreive the data then give send this data to the frontend
+- (frontend) Modify frontend for dynamic sales display
+
+
+
+4) (frontend) Finalize the authentification using the Metamask crypto wallet, lyou can use this library https://github.com/jacobedawson/connect-metamask-react-dapp
+
+CoinGecko
+Crypto API Documentation | CoinGecko
+Power your application with our free & independently sourced crypto data such as live prices, trading volume, exchange volumes, trading pairs, & more.
+GitHub
+raydium-frontend/swap.tsx at 11b13afcc1531f76b96e06eaff98f613665a9ee7 · raydium-io/raydium-frontend
+Raydium Frontend V2. Contribute to raydium-io/raydium-frontend development by creating an account on GitHub.
+GitHub
+raydium-frontend/swap.tsx at 11b13afcc1531f76b96e06eaff98f613665a9ee7 · raydium-io/raydium-frontend
+Raydium Frontend V2. Contribute to raydium-io/raydium-frontend development by creating an account on GitHub.
+GitHub
+GitHub - jacobedawson/connect-metamask-react-dapp: Build a simple React / Web3 Dapp that replicates a small portion of the Uniswap v2 interface
+Build a simple React / Web3 Dapp that replicates a small portion of the Uniswap v2 interface - GitHub - jacobedawson/connect-metamask-react-dapp: Build a simple React / Web3 Dapp that replicates a ...
+Levi Driessen 7:28 AM
+OK. now I am checking.
+
+Levi Driessen 7:34 AM
+Abdoulaye, I've checked the summary.
+
+So, when will I start this project?
+
+Levi Driessen 8:02 AM
+Abdoulaye, may I see the source code of the smart contract? I couldn't see afrik-invest-contact.zip
+
+Abdoulaye BA 8:06 AM
+Here is the git url for the backend : git@github.com:bacharif/backend-afrikinvest.git
+In case of git issue, the project is also downloadable via this zip : https://onedrive.live.com/?authkey=%21AKHCBJ9zrzzy38U&cid=6A9501BECEBE5ACB&id=6A9501BECEBE5ACB%2152179&parId=6A9501BECEBE5ACB%21104&action=locate
+
+Levi Driessen 8:06 AM
+OK. I will confirm.
+
+Levi Driessen 8:13 AM
+So, what are you going to do? what are you thinking about me?
+
+Please make a decision.
+
+Abdoulaye BA 8:15 AM
+yes sure, did you check the source code ?
+Is it ok for you ?
+
+Levi Driessen 8:16 AM
+yes. I confirmed. no problem
+
+Abdoulaye BA 8:18 AM
+That's perfect, I have some interviews to complete with other shortlisted freelancers and I will come back to you with final choice this evening
+
+Levi Driessen 8:19 AM
+OK, sure. I will wait.
+
+I want you to make a right decision.
+
+Abdoulaye BA 8:21 AM
+Thanks Levi, appreciate that
+
+Which plugin can we use, to convert crypto payment to fiat ?
+
+Levi Driessen 8:25 AM
+we can use zonda-pay to convert crypto into EUR.
+
+maybe you have your own idea?
+
+Abdoulaye BA 8:26 AM
+The previous developer was talking about bitpay
+
+Levi Driessen 8:27 AM
+Ah, bitpay. well, that's not bad.
+
+if you want that, then I will try.
+
+But Bitpay has more paymentcommission.
+
+Anyway, I will try that you wanted. or if I have to make a decision, then I will use zonda.
+
+Levi Driessen 8:38 AM
+What about bitstamp?
+
+that is most popular today with user-friendly interface and fulltime support.
+
+Abdoulaye BA 8:40 AM
+okay, why not, we can try bitstamp
+
+Levi Driessen 8:42 AM
+so is your interview with others going well?
+
+Abdoulaye BA 8:43 AM
+just few things to check, I have a meeting now, I will come back to you this evening
+
+Levi Driessen 8:45 AM
+OK, wish you good luck.
+
+Abdoulaye BA 8:51 AM
+Thanks Levi
+
+
+
+
+Abdoulaye BA
+Abdoulaye BA
+6:06 PM GMT+2 (9 h ahead)
+ Blockchain, smart contract and python developer
+Search Messages
+People
+Files & Links
+Personal notepad

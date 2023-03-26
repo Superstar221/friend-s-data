@@ -1,0 +1,27 @@
+Laravel Web sites:
+https://alphacoders.com/
+https://www.roomies.com
+
+Vue.js Web sites:
+https://swellpirate.com/
+https://elfinforce.com/
+
+React.js Web sites:
+https://www.myka.com/
+https://www.vrbo.com/
+
+CMS Web sites:
+https://sofresh.ae/ 
+https://www.kyudokan.co.uk/
+
+NEXT.JS Web sites:
+https://www.wearejude.com/
+https://bunsa.studio/
+
+Ecommerce Web Sites:
+https://www.blackbutterflyclothing.com/
+https://northernism.com/
+
+TypeScript Web Sites:
+https://lunafi.io
+https://spiralscout.com/

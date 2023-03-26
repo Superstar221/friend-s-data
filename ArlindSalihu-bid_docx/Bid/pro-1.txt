@@ -1,0 +1,25 @@
+Hello!
+
+Your job opportunity looks interesting. It's great that you have the opportunity to give an example of what you want to get as a result of cooperation. Moreover, our company already had experience in solving such problems.
+
+We have available qualified JavaScript developer with over four years of experience in software programming. Mostly specialize in JavaScript, React.js, Node.js, Django, GraphQL. Successfully completed more than three long-term projects and many one-time projects. Ali has very good skills in problem-solving, and is a reliable and easy-going team member.
+
+You can see for yourself by looking at examples of previously successfully completed project using React:
+
+Project: Luckytruck
+Position: Full-stack developer
+Luckytruck is an online platform for digitizing trucking insurance across the USA. The product is a complete platform to manage and buy insurances from different carriers.
+Technologies used: React/Next js, Node js, Graphql, Postgresql, AWS, Ascend (Paypal), React Hooks, Pubsub, Primereact
+
+Project: UK Based Software House
+Position: Full-stack developer
+Balawal IT Solutions is a UK based software house with international clients from USA and Japan.
+Technologies used: React Native, React.js, Django, Node js, Graphql, Postgresql, AWS, Firebase, MongoDB, Heroku, Material UI, Vercel, Paypal, Stripe
+
+I have also attached a CV of the developer so that you can have information about candidacy in more detail.
+
+In addition, we have a time difference of only one hour, which gives us a great opportunity to build our schedules in such a way as to organize calls at the most convenient time for us. So let's schedule a call at a convenient time and discuss the details of our further cooperation!
+
+Waiting for your reply
+Best regards,
+Tatyana
